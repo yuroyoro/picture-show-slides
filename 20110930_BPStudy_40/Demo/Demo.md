@@ -95,6 +95,9 @@ __Finagle__ with _Ostrich_
 finagle-starter-kit
 [<em class="hc">https://github.com/https://github.com/bmatheny/finagle-starter-kit</em>](https://github.com/https://github.com/bmatheny/finagle-starter-kit)
 
-
+!SLIDE
+## acknowledgements
+- these slides were made using [softprops/picture-show](https://github.com/softprops/picture-show)
+- [view source](https://github.com/yuroyoro/picture-show-slides/20110930_BPStudy_40)
 
 
