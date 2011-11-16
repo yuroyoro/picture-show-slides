@@ -1,0 +1,638 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <title>20110930_BPStudy49</title>
+        <link href="assets/css/show.css" type="text/css" rel="stylesheet" />
+        <link href="assets/css/prettify.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/show.js"></script>
+        <script type="text/javascript" src="assets/js/prettify/prettify.js"></script>
+        <script type="text/javascript" src="assets/js/prettify/lang-apollo.js"></script><script type="text/javascript" src="assets/js/prettify/lang-css.js"></script><script type="text/javascript" src="assets/js/prettify/lang-hs.js"></script><script type="text/javascript" src="assets/js/prettify/lang-lisp.js"></script><script type="text/javascript" src="assets/js/prettify/lang-lua.js"></script><script type="text/javascript" src="assets/js/prettify/lang-ml.js"></script><script type="text/javascript" src="assets/js/prettify/lang-proto.js"></script><script type="text/javascript" src="assets/js/prettify/lang-scala.js"></script><script type="text/javascript" src="assets/js/prettify/lang-sql.js"></script><script type="text/javascript" src="assets/js/prettify/lang-sql.js"></script><script type="text/javascript" src="assets/js/prettify/lang-vb.js"></script><script type="text/javascript" src="assets/js/prettify/lang-vhdl.js"></script><script type="text/javascript" src="assets/js/prettify/lang-wiki.js"></script><script type="text/javascript" src="assets/js/prettify/lang-yaml.js"></script><link href="css/custom.css?1317383676105" type="text/css" rel="stylesheet" />
+      <script type="text/javascript"><!--
+        window.onload=function() { prettyPrint(); };
+      --></script>
+      </head>
+      <body>
+        <div id="slides">
+          <div id="reel">
+            <div class="content" id="slide-0">
+       <div class="container"><h1><em>Finagle</em></h1><p><a href="https://github.com/twitter/finagle" ><em class="hc">https://github.com/twitter/finagle</em></a>
+</p></div>
+      </div><div class="content" id="slide-1">
+       <div class="container"><p><strong>ᘀᘐᘠᘰᙀᙐᙠᙰᘁᘑᘡᘱᙁᙑᙡᙱᘂᘒᘢᘲᙂᙒ</strong>
+<em>ᙢᙲᘃᘓᘣᘳᙃᙓᙣᙳᘄᘔᘤᘴᙄᙔᙤᙴᘅᘕᘥ</em>
+<span class="comment">ᙕᙥᙵᘆᘖᘦᘶᙆᙖᙦᙶᚆᘇᘗᘧᘷᙇᙗᙧ,ᘈᘘᘨ</span>
+ᘸᙈᙘᙨᘉᘙᘩᘹᙉᙙᙩᘊᘚᘪᘺᙊᙚᙪᘋᘛᘫᘻᙋ
+<span class="comment">ᙛᙫᘌᘜᘬᘼᙌᙜᙬᘍᘝᘭᘽᙍᙝ᙭ᘎᘞᘮᘾᙎᙞ᙮ᘏᘟ</span>
+<em>ᘯᘿᙏᙟᙯᔀᔐᔠᔰᕀᕐᕠᕰᖀᖐᖠᖰᗀᗐᗠᗰᔁᔑᔡᔱ</em>
+<strong>ᘀᘐᘠᘰᙀᙐᙠᙰᘁᘑᘡᘱᙁᙑᙡᙱᘂᘒᘢᘲᙂᙒ</strong>
+</p></div>
+      </div><div class="content" id="slide-2">
+       <div class="container"><p>＼('.')~ Hi, I'm<br/>
+<a href="http://twitter.com/yuroyoro" >@yuroyoro</a>
+</p><p><img  src="Finagle/Background2_copy.png" alt="yuroyoro" />
+</p></div>
+      </div><div class="content" id="slide-3">
+       <div class="container"><p><img  src="Finagle/20110614194452.png" alt="クラウザー様" />
+</p></div>
+      </div><div class="content" id="slide-4">
+       <div class="container"><p><img  src="Finagle/20110614194453.png" alt="タイプ" />
+</p></div>
+      </div><div class="content" id="slide-5">
+       <div class="container"><p>ヽ(*ﾟдﾟ)ノ＜ I'd
+</p><p>Talk about Asynchronous RPC Framework <strong>Finagle</strong> developed by <em>Twitter,Inc</em>
+</p></div>
+      </div><div class="content" id="slide-6">
+       <div class="container"><p><em>Finagle</em> is ...
+</p></div>
+      </div><div class="content" id="slide-7">
+       <div class="container"><p><strong>Asynchronous</strong>
+</p><p><em>RPC</em>
+</p><span class="cy">Server/Client</span>
+<p><span>Framework</span>.
+</p></div>
+      </div><div class="content" id="slide-8">
+       <div class="container"><p>in <span>Java</span>, <strong>Scala</strong>, or any JVM language.
+</p></div>
+      </div><div class="content" id="slide-9">
+       <div class="container"><p>Developed by <strong>Twitter,Inc</strong>
+</p><p><a href="https://github.com/twitter/finagle" ><em class="hc">https://github.com/twitter/finagle</em></a>
+</p></div>
+      </div><div class="content" id="slide-10">
+       <div class="container"><p><strong>Finagle</strong> has been used in <em>twitter search</em> backends.
+</p></div>
+      </div><div class="content" id="slide-11">
+       <div class="container"><p><img  src="Finagle/Oppai.png" alt="おっぱい" />
+</p></div>
+      </div><div class="content" id="slide-12">
+       <div class="container"><p><strong>Twitter</strong> plan to continue deploying <em>Finagle</em> more widely.
+</p></div>
+      </div><div class="content" id="slide-13">
+       <div class="container"><p><img  src="Finagle/Finagle_Diagram.png" alt="Finagle_Diagram" />
+</p></div>
+      </div><div class="content" id="slide-14">
+       <div class="container"><h1><em>Architecture</em></h1></div>
+      </div><div class="content" id="slide-15">
+       <div class="container"><h3><strong>Finagle</strong> on</h3><p><img  src="Finagle/FinagleRelationship.png" alt="Relationship between your RCP client or server, Finagle, Netty, and Java Libraries " />
+</p><p><strong>JVM</strong> / <em>NIO</em> / <span>Netty</span>
+</p></div>
+      </div><div class="content" id="slide-16">
+       <div class="container"><h3><strong>Protocol Independent</strong></h3><ul><li>HTTP/HTTPS
+</li><li>HTTP streaming (Comet)
+</li><li>Thrift
+</li><li>memcached
+</li><li>... more
+</li></ul></div>
+      </div><div class="content" id="slide-17">
+       <div class="container"><h3><strong>Features</strong></h3><ul><li>Connection Pooling
+</li><li>Load Balancing
+</li><li>Failure Detection
+</li><li>Failover/Retry
+</li><li>Distributed Tracing (a la Dapper)
+</li><li>Service Discovery (e.g.,  via Zookeeper)
+</li><li>Rich Statistics
+</li><li>Native OpenSSL Bindings
+</li></ul></div>
+      </div><div class="content" id="slide-18">
+       <div class="container"><h3><strong>Primitive</strong> Objects</h3><ul><li><strong>Futures</strong>
+</li><li><em>Services</em>
+</li><li><span>Filters</span>
+</li><li><span class="cy">Codecs</span>
+</li></ul></div>
+      </div><div class="content" id="slide-19">
+       <div class="container"><h2><strong>Futures</strong></h2><code>
+<span>class</span> Future [+A] <span>extends</span> TryLike[A, Future] {
+  <span>def</span> apply () : A
+}
+</code>
+</div>
+      </div><div class="content" id="slide-20">
+       <div class="container"><p><em>abstraction</em> for all <strong>asynchronous computation</strong>.
+</p><code>
+<span>val</span> req: HttpRequest =
+  <span>new</span> DefaultHttpRequest(HTTP_1_1, GET, "/")
+<span>val</span> <em>resFuture: Future</em>[HttpResponse] = client(req)
+</code>
+</div>
+      </div><div class="content" id="slide-21">
+       <div class="container"><p>register a <em>callbacks</em>.
+</p><code>
+<em>resFuture</em> <strong>onSuccess</strong> { responseFuture =>
+  println(responseFuture)
+} <strong>onFailure</strong> { exception =>
+  println(exception)
+}
+</code>
+</div>
+      </div><div class="content" id="slide-22">
+       <div class="container"><p><em>callbacks</em> will be invoked <strong>asynchronously</strong>.
+</p></div>
+      </div><div class="content" id="slide-23">
+       <div class="container"><p><strong>combine</strong> <em>Futures</em>.
+</p><code>
+<span>val</span> authenticatedUser: Future[User] =
+  User.authenticate(email, password)
+<br/>
+<span>val</span> lookupTweets: Future[Seq[Tweet]] =
+  authenticatedUser <strong>flatMap</strong> { user =>
+    Tweet.findAllByUser(user)
+  }
+</code>
+</div>
+      </div><div class="content" id="slide-24">
+       <div class="container"><p>using <strong>for expression</strong> instead of flatMap.
+</p><code>
+<span>for</span> {
+  user <- User.authenticate(email, password)
+  tweets <- Tweet.findAllByUser(user)
+} yield tweets
+</code>
+</div>
+      </div><div class="content" id="slide-25">
+       <div class="container"><p>other features.
+</p><ul><li><p><em>Timeouts</em>
+</p><code class="small">resFuture.<strong>within(1.second)</strong> onSuccess { response => ... }</code>
+</li><li><p><em>Promises</em>
+</p><code>can be both read and written.</code>
+</li><li><p><em>Future Pools</em>
+</p><code>makes blocking operation asynchronous.</code>
+</li></ul></div>
+      </div><div class="content" id="slide-26">
+       <div class="container"><h2><strong>Services</strong></h2><code>
+<span>class</span> <strong>Service</strong> [-Req, +Rep]
+  <span>extends</span> (Req) => Future[Rep] {
+  <span>def</span> apply (request: Req) : Future[Rep]
+}
+</code>
+</div>
+      </div><div class="content" id="slide-27">
+       <div class="container"><p><strong>asynchronous function</strong>
+</p><p>from <span>Request</span>
+</p><p>to <em>Future</em>
+</p></div>
+      </div><div class="content" id="slide-28">
+       <div class="container"><code>
+<span>val</span> service = <span>new</span> <strong>Service</strong>[<span>HttpRequest</span>, <em>HttpResponse</em>] {
+  <span>def</span> apply(request: <span>HttpRequest</span>) = {
+    <span>val</span> response = <span>new</span> DefaultHttpResponse(HTTP_1_1, OK)
+    response.setContent(copiedBuffer("hello world", UTF_8))
+    <em>Future.value(response)</em>
+  }
+}
+</code>
+</div>
+      </div><div class="content" id="slide-29">
+       <div class="container"><p>Building <em>Server</em> from <strong>Service</strong>.
+</p><code>
+<span>val</span> <em>server: Server</em> = ServerBuilder()
+  .codec(Http())
+  .bindTo(new InetSocketAddress(8080))
+  .name("SimpleHttpServer")
+  .build(<strong>service</strong>)
+</code>
+</div>
+      </div><div class="content" id="slide-30">
+       <div class="container"><p>Building <em>Client</em> from <strong>Service</strong>.
+</p><code>
+<span>val</span> <em>client</em>: <strong>Service[HttpRequest, HttpResponse]</strong>> =
+  ClientBuilder()
+    .codec(Http())
+    .hosts(address)
+    .build()
+</code>
+</div>
+      </div><div class="content" id="slide-31">
+       <div class="container"><h2><strong>Filters</strong></h2><code class="small">
+<span>class</span> <strong>Filter</strong> [-ReqIn, +RepOut, +ReqOut, -RepIn]
+  <span>extends</span> (ReqIn, <em>Service</em>[ReqOut,  RepIn]) => <em>Future</em>[RepOut] {
+  <span>def</span> apply (request:ReqIn,
+      service:<em>Service</em>[ReqOut, RepIn]) : <em>Future</em>[RepOut]
+}
+</code>
+</div>
+      </div><div class="content" id="slide-32">
+       <div class="container"><p>acts as a <strong>decorator/transformer</strong> of a <em>Service</em>.
+</p></div>
+      </div><div class="content" id="slide-33">
+       <div class="container"><code class="small">
+<span>val</span> authorize =
+  <span>new</span> <strong>SimpleFilter</strong>[HttpRequest, HttpResponse] {
+  <span>def</span> apply(
+    request:<em>HttpRequest</em>,
+    continue:<em>Service</em>[HttpRequest, HttpResponse]
+  ) = {
+    <span>if</span> ("open sesame" == request.getHeader("Authorization")) {
+      continue(request)
+    } <span>else</span> {
+      Future.value(
+        <span>new</span> DefaultHttpResponse(HTTP_1_1, FORBIDDEN))
+    }
+  }
+}
+</code>
+</div>
+      </div><div class="content" id="slide-34">
+       <div class="container"><p>define <em>service</em> with <strong>filters</strong>.
+</p><code>
+<span>val</span> service : Service[HttpRequest, HttpResponse] =
+  <strong>authorize</strong> <span>andThen</span> <strong>otherFilter</strong> <span>andThen</span> <em>service</em>
+</code>
+</div>
+      </div><div class="content" id="slide-35">
+       <div class="container"><h2><strong>Codecs</strong></h2><code>
+<span>trait</span> <strong>Codec</strong> [Req, Rep]
+</code>
+</div>
+      </div><div class="content" id="slide-36">
+       <div class="container"><p><em>encodes</em> and <em>decodes</em> wire protocols
+</p><ul><li>HTTP/HTTPS
+</li><li>Thrift
+</li><li>memcached
+</li><li>...
+</li></ul></div>
+      </div><div class="content" id="slide-37">
+       <div class="container"><p>binds service on <em>HTTP</em>.
+</p><code>
+<span>val</span> <em>server: Server</em> = ServerBuilder()
+  <strong>.codec(Http())</strong>
+  .bindTo(new InetSocketAddress(8080))
+  .name("SimpleHttpServer")
+  .build(service)
+</code>
+</div>
+      </div><div class="content" id="slide-38">
+       <div class="container"><p>binds service on <em>Thrift</em>.
+</p><code>
+<span>val</span> <em>server: Server</em> = ServerBuilder()
+  <strong>.codec(ThriftServerFramedCodec())</strong>
+  .bindTo(new InetSocketAddress(8080))
+  .name("SimpleHttpServer")
+  .build(service)
+</code>
+</div>
+      </div><div class="content" id="slide-39">
+       <div class="container"><h2><strong>Servers</strong></h2><p><img  src="Finagle/Filters.png" alt="FiterChain" />
+</p></div>
+      </div><div class="content" id="slide-40">
+       <div class="container"><p>RPC servers are built out of a <em>Service</em> and some <strong>Filter</strong> objects.
+</p></div>
+      </div><div class="content" id="slide-41">
+       <div class="container"><h2>Threading Model</h2></div>
+      </div><div class="content" id="slide-42">
+       <div class="container"><p><strong>Event Loop</strong>
+</p></div>
+      </div><div class="content" id="slide-43">
+       <div class="container"><p><span>while</span>(1){
+</p></div>
+      </div><div class="content" id="slide-44">
+       <div class="container"><p><span>for</span>(;;){
+</p></div>
+      </div><div class="content" id="slide-45">
+       <div class="container"><h3><span>IMPORTANT!!</span></h3><p>Finagle requires <strong>avoid blocking operation</strong> in the Finagle <em>event loop</em>
+</p></div>
+      </div><div class="content" id="slide-46">
+       <div class="container"><p>Like <span class="cy">Node.js</span>
+</p></div>
+      </div><div class="content" id="slide-47">
+       <div class="container"><p>But, <strong>Finagle's API</strong> provides your code <em>asynchronously</em>.
+</p><ul><li><strong>Futures</strong>
+</li><li><em>Services</em>
+</li><li><span>Filters</span>
+</li><li><span class="cy">Codecs</span>
+</li></ul></div>
+      </div><div class="content" id="slide-48">
+       <div class="container"><p><img  src="Finagle/ThreadEx.png" alt="Threading" />
+</p></div>
+      </div><div class="content" id="slide-49">
+       <div class="container"><p><img  src="Finagle/ThreadExNonBlockingServer.png" alt="Bolcking" />
+</p></div>
+      </div><div class="content" id="slide-50">
+       <div class="container"><p><strong>ᘀᘐᘠᘰᙀᙐᙠᙰᘁᘑᘡᘱᙁᙑᙡᙱᘂᘒᘢᘲᙂᙒ</strong>
+<em>ᙢᙲᘃᘓᘣᘳᙃᙓᙣᙳᘄᘔᘤᘴᙄᙔᙤᙴᘅᘕᘥ</em>
+<span class="comment">ᙕᙥᙵᘆᘖᘦᘶᙆᙖᙦᙶᚆᘇᘗᘧᘷᙇᙗᙧ,ᘈᘘᘨ</span>
+ᘸᙈᙘᙨᘉᘙᘩᘹᙉᙙᙩᘊᘚᘪᘺᙊᙚᙪᘋᘛᘫᘻᙋ
+<span class="comment">ᙛᙫᘌᘜᘬᘼᙌᙜᙬᘍᘝᘭᘽᙍᙝ᙭ᘎᘞᘮᘾᙎᙞ᙮ᘏᘟ</span>
+<em>ᘯᘿᙏᙟᙯᔀᔐᔠᔰᕀᕐᕠᕰᖀᖐᖠᖰᗀᗐᗠᗰᔁᔑᔡᔱ</em>
+<strong>ᘀᘐᘠᘰᙀᙐᙠᙰᘁᘑᘡᘱᙁᙑᙡᙱᘂᘒᘢᘲᙂᙒ</strong>
+</p></div>
+      </div><div class="content" id="slide-51">
+       <div class="container"><h1>Benchmarking <em>Finagle</em></h1></div>
+      </div><div class="content" id="slide-52">
+       <div class="container"><p>A simple http echo application.
+</p><pre><code class="prettyprint lang-scala">object SimpleHttpServer {
+  def main(args: Array[String]) =  {
+
+    val service = new Service[HttpRequest, HttpResponse] {
+      def apply(request: HttpRequest) = {
+        val response = new DefaultHttpResponse(HTTP_1_1, OK)
+        response.addHeader(&quot;content-type&quot;, &quot;text/plain&quot;)
+        response.setContent(copiedBuffer(&quot;%s at %s&quot; format(request.getUri, new java.util.Date), UTF_8))
+        response.setHeader(Names.CONTENT_LENGTH,  response.getContent.readableBytes)
+        Future.value(response)
+      }
+    }
+
+    println(&quot;start&quot;)
+    val server: Server = ServerBuilder()
+      .codec(Http())
+      .maxConcurrentRequests(5000)
+      .bindTo(new InetSocketAddress(8000))
+      .name(&quot;HttpEchoServer&quot;)
+      .build(service)
+    println(&quot;boot&quot;)
+  }
+}
+</code></pre></div>
+      </div><div class="content" id="slide-53">
+       <div class="container"><h2><span class="cy">Node.js</span></h2><code> (v0.5.7)</code>
+<pre><code class="prettyprint lang-js">    var http = require('http'),
+        url  = require('url');
+
+    var server = http.createServer(function(req, res) {
+      res.writeHead(200, {'content-type': 'text/plain'});
+      res.end(url.parse(req.url)['pathname'] + &quot;at&quot; +  new Date);
+    });
+
+    server.listen(8000);
+    console.log('Server running at http://localhost:8000/');
+</code></pre></div>
+      </div><div class="content" id="slide-54">
+       <div class="container"><h2><strong>Tornado</strong></h2><code> with Python 2.6, gunicorn + gevent </code>
+<pre><code class="prettyprint lang-py">import tornado.httpserver
+import tornado.ioloop
+import tornado.options
+import tornado.wsgi
+import datetime
+
+from tornado.options import define, options
+
+define(&quot;port&quot;, default=8000, help=&quot;run on the given port&quot;, type=int)
+
+def echo_app(environ, start_response):
+    status = &quot;200 OK&quot;
+    response_headers = [(&quot;Content-type&quot;, &quot;text/plain&quot;)]
+    start_response(status, response_headers)
+    return [environ['PATH_INFO'] +&quot; at &quot; +  datetime.datetime.now().strftime(u'%Y/%m/%d %H:%M:%S')]
+
+def main():
+    tornado.options.parse_command_line()
+    container = tornado.wsgi.WSGIContainer(echo_app)
+    http_server = tornado.httpserver.HTTPServer(container)
+    http_server.listen(options.port)
+    tornado.ioloop.IOLoop.instance().start()
+
+if __name__ == &quot;__main__&quot;:
+    main()
+</code></pre></div>
+      </div><div class="content" id="slide-55">
+       <div class="container"><h3><span>EventMachien</span></h3><code>with ruby-1.9.2-p290</code>
+<pre><code class="prettyprint lang-rb">#!/usr/bin/env ruby
+# -*- coding: utf-8 -*-
+require 'rubygems'
+require 'eventmachine'
+require 'evma_httpserver'
+
+class Handler  &lt; EventMachine::Connection
+  include EventMachine::HttpServer
+
+  def process_http_request
+    res = EventMachine::DelegatedHttpResponse.new(self)
+
+    res.status = 200
+    res.content_type 'text/plain'
+    res.content = @http_path_info + &quot; at &quot; + Time.now.to_s
+    res.send_response
+  end
+end
+
+EventMachine::run do
+  EventMachine::start_server(&quot;0.0.0.0&quot;, 8000, Handler)
+  puts &quot;http server start, port 8000&quot;
+end
+</code></pre></div>
+      </div><div class="content" id="slide-56">
+       <div class="container"><p>On <span>Aamazon EC2.</span>
+</p><ul><li><p><em>Large Instance</em>  m1.large (64-bit)
+</p><div class="small">
+Memory 7.5 GB<br/>
+4 ECU (2 virtual cores with 2 ECU each)<br/>
+High IO<br/>
+</div><br/>
+</li><li><p><strong>High-CPU Extra Large Instance</strong> c1.xlarge (64-bit)
+</p><div class="small">
+Memory 7.5 GB<br/>
+20 ECU (8 virtual cores with 2.5 ECU each)<br/>
+High IO<br/>
+</div>
+<br/>
+</li></ul></div>
+      </div><div class="content" id="slide-57">
+       <div class="container"><ul><li><em>5</em> times
+</li><li><strong>2000</strong> concurrency reqeuests
+</li><li>Total <span>8000</span> reqeuests
+</li></ul></div>
+      </div><div class="content" id="slide-58">
+       <div class="container"><p><em>ab</em> -c <strong>2000</strong> -n <span>8000</span> http://example.com/hoge
+</p></div>
+      </div><div class="content" id="slide-59">
+       <div class="container"><h1><strong>Results</strong></h1><p><img  src="Performance/chart_1.png" alt="result" />
+</p><p><a href="https://docs.google.com/spreadsheet/ccc?key=0AtXoTuDY71j1dGZ2OUZ1dDcza1hHR0Z2dWZPVDlXeUE&amp;hl=en_US" >detail</a>
+</p></div>
+      </div><div class="content" id="slide-60">
+       <div class="container"><h3><em>Large Instance</em>  m1.large</h3><table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Node.js</th>
+      <th>Tornado</th>
+      <th>EventMachien</th>
+      <th>Finagle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="num">1st</td>
+      <td>2270.32</td>
+      <td>1877.48</td>
+      <td>2582.19</td>
+      <td>2294.70</td></tr>
+    <tr>
+      <td class="num">2nd</td>
+      <td>1798.75</td>
+      <td>1987.68</td>
+      <td>1720.71</td>
+      <td>2423.77</td></tr>
+    <tr>
+      <td class="num">3rd</td>
+      <td>1304.78</td>
+      <td>2010.48</td>
+      <td>2435.43</td>
+      <td>2415.71</td></tr>
+    <tr>
+      <td class="num">4th</td>
+      <td>1254.55</td>
+      <td>1777.23</td>
+      <td>2574.30</td>
+      <td>2603.82</td></tr>
+    <tr>
+      <td class="num">5th</td>
+      <td>1321.05</td>
+      <td>2143.58</td>
+      <td>2609.27</td>
+      <td>2590.74</td></tr>
+    <tr class="ave">
+      <td>Ave</td>
+      <td>1589.89</td>
+      <td>1959.29</td>
+      <td>2384.38</td>
+      <td>2465.748</td></tr>
+  </tbody>
+</table>
+</div>
+      </div><div class="content" id="slide-61">
+       <div class="container"><h3><strong>High-CPU Extra Large Instance</strong> c1.xlarge</h3><table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Node.js</th>
+      <th>Tornado</th>
+      <th>EventMachien</th>
+      <th>Finagle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="num">1st</td>
+      <td>2270.32</td>
+      <td>1877.48</td>
+      <td>2582.19</td>
+      <td>2294.70</td></tr>
+    <tr><td class="num">2nd</td>
+      <td>1798.75</td>
+      <td>1987.68</td>
+      <td>1720.71</td>
+      <td>2423.77</td></tr>
+    <tr><td class="num">3rd</td>
+      <td>1304.78</td>
+      <td>2010.48</td>
+      <td>2435.43</td>
+      <td>2415.71</td></tr>
+    <tr><td class="num">4th</td>
+      <td>1254.55</td>
+      <td>1777.23</td>
+      <td>2574.30</td>
+      <td>2603.82</td></tr>
+    <tr><td class="num">5th</td>
+      <td>1321.05</td>
+      <td>2143.58</td>
+      <td>2609.27</td>
+      <td>2590.74</td></tr>
+    <tr class="ave"><td>Ave</td>
+      <td>2640.38</td>
+      <td>2778.152</td>
+      <td>2602.292</td>
+      <td>3311.632</td></tr>
+  </tbody>
+</table>
+</div>
+      </div><div class="content" id="slide-62">
+       <div class="container"><h1><strong>Demo 1</strong></h1></div>
+      </div><div class="content" id="slide-63">
+       <div class="container"><p><strong>HTTP</strong> <em>Streaming</em> Server
+</p><pre><code class="prettyprint lang-scala">package com.yuroyoro.finagle
+
+import com.twitter.concurrent.{Broker, Offer}
+import com.twitter.finagle.builder.{Server, ServerBuilder}
+import com.twitter.finagle.Service
+import com.twitter.finagle.stream.{Stream, StreamResponse}
+import com.twitter.util.{Future, Timer, Time, JavaTimer}
+import com.twitter.conversions.time._
+import java.net.InetSocketAddress
+import org.jboss.netty.buffer.ChannelBuffer
+import org.jboss.netty.buffer.ChannelBuffers.copiedBuffer
+import org.jboss.netty.handler.codec.http.{DefaultHttpResponse, HttpRequest, HttpResponseStatus}
+import org.jboss.netty.util.CharsetUtil
+import scala.util.Random
+
+object StreamServer {
+  // &quot;tee&quot; messages across all of the registered brokers.
+  val addBroker = new Broker[Broker[ChannelBuffer]]
+  val remBroker = new Broker[Broker[ChannelBuffer]]
+  val messages = new Broker[ChannelBuffer]
+  private[this] def tee(receivers: Set[Broker[ChannelBuffer]]) {
+    Offer.select(
+      addBroker.recv { b =&gt; tee(receivers + b) },
+      remBroker.recv { b =&gt; tee(receivers - b) },
+      if (receivers.isEmpty) Offer.never else {
+        messages.recv { m =&gt;
+          Future.join(receivers map { _ ! m } toSeq) ensure tee(receivers)
+        }
+      }
+    )
+  }
+
+  private[this] def produce(r: Random, t: Timer) {
+    t.schedule(1.second.fromNow) {
+      val m = copiedBuffer(r.nextInt.toString + &quot;\n&quot;, CharsetUtil.UTF_8)
+      messages.send(m) andThen produce(r, t)
+    }
+  }
+
+  // start the two processes.
+  tee(Set())
+  produce(new Random, new JavaTimer)
+
+  def main(args: Array[String]) {
+    val myService = new Service[HttpRequest, StreamResponse] {
+      def apply(request: HttpRequest) = Future {
+        val subscriber = new Broker[ChannelBuffer]
+        addBroker ! subscriber
+        new StreamResponse {
+          val httpResponse = new DefaultHttpResponse(
+            request.getProtocolVersion, HttpResponseStatus.OK)
+          def messages = subscriber.recv
+          def error = new Broker[Throwable].recv
+          def release() = {
+            remBroker ! subscriber
+            // sink any existing messages, so they
+            // don't hold up the upstream.
+            subscriber.recv foreach { _ =&gt; () }
+          }
+        }
+      }
+    }
+
+    val server: Server = ServerBuilder()
+      .codec(Stream())
+      .bindTo(new InetSocketAddress(8080))
+      .name(&quot;streamserver&quot;)
+      .build(myService)
+  }
+}
+</code></pre></div>
+      </div><div class="content" id="slide-64">
+       <div class="container"><h1><strong>Demo 2</strong></h1></div>
+      </div><div class="content" id="slide-65">
+       <div class="container"><p><strong>Finagle</strong> with <em>Ostrich</em>
+</p><p><a href="https://github.com/twitter/ostrich" ><em class="hc">https://github.com/twitter/ostrich</em></a>
+</p></div>
+      </div><div class="content" id="slide-66">
+       <div class="container"><p>finagle-starter-kit
+<a href="https://github.com/https://github.com/bmatheny/finagle-starter-kit" ><em class="hc">https://github.com/https://github.com/bmatheny/finagle-starter-kit</em></a>
+</p></div>
+      </div><div class="content" id="slide-67">
+       <div class="container"><h2>acknowledgements</h2><ul><li>these slides were made using <a href="https://github.com/softprops/picture-show" >softprops/picture-show</a>
+</li><li><a href="https://github.com/yuroyoro/picture-show-slides/20110930_BPStudy_40" >view source</a>
+</li></ul></div>
+      </div><div class="content" id="slide-68">
+       <div class="container"><ul><li><a href="https://github.com/twitter/finagle" >twitter/finagle</a>
+</li><li><a href="http://twitter.github.com/scala_school/searchbird.html" >Scala School</a>
+</li><li><a href="http://engineering.twitter.com/2011/08/finagle-protocol-agnostic-rpc-system.html" >Twitter Engineering Blog:Finagle</a>
+</li><li><a href="http://www.vimeo.com/29763331" >Building Network Services with Finagle and Ostrich</a>
+</li><li><a href="https://github.com/twitter/finagle/blob/master/finagle-example/src/main/scala/com/twitter/finagle/example/http/HttpServer.scala" >yuroyoro's example</a>
+</li></ul></div>
+      </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="js/custom.js?1317383676636"></script>
+      </body>
+    </html>
